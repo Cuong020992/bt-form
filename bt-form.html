@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập tạo form</title>
+</head>
+<body>
+<!--Form 1-->
+<form method="get" action="bt-form.html" class="f1" style="color: orange">
+    <span style="     font-weight: bolder;
+    background: #ff0808;
+    color: white;
+    margin: -20px -5px;
+    padding: 5px 150px;
+    position: absolute;
+    font-size: 20px;"> SỞ THÍCH CỦA BẠN</span><br>
+    <label id="lb">Họ và tên</label>
+    <input type="text" name="txt" size="20" id="txt"><br>
+    <label id="lb">Email</label>
+    <input type="email" name="txt" size="15" id="txt"><br>
+    <label id="lb" style="color: darkblue">Sở thích</label>
+    <input id="cb" type="checkbox" name="o" >Thể thao
+    <input id="cb" type="checkbox" name="o" >Âm nhạc
+    <input id="cb" type="checkbox" name="o" >Đọc sách<br>
+    <input id="cb" type="checkbox" name="o" >Lướt web
+    <input id="cb" type="checkbox" name="o" >Chơi game
+    <input id="cb" type="checkbox" name="o" >Điện ảnh<br>
+    <input id="cb" type="checkbox" name="o" >Du lịch<br>
+    <input id="btn" type="submit" value="Gửi thông tin" name="submit" size="10">
+    <input id="btn" type="reset" value="Nhập lại" name="reset" size="10">
+    <!-- Chỉnh màu mè cho form 1-->
+    <style>
+        .f1 {    border: 30px solid #0022ff61;
+            width: 478px;
+            margin: 20px;
+            padding: 25px;}
+    </style>
+    <!--chỉnh khoảng cách-->
+    <style>
+        #txt {margin-top:15px;}
+        #lb {margin-right: 30px;color: darkblue;font-weight: bolder;}
+        #cb {margin-top:15px;color: chocolate;font-weight: bolder;}
+        #btn {margin: 10px; padding: 10px 20px;border-radius: 10px;box-shadow: 2px 3px 5px black;    margin-left: 85px;}
+    </style>
+</form>
+
+<!--form2-->
+<form method="get" action="bt-form.html" class="f2">
+    <span style="font-size: 20px; font-weight: bolder; color: blue">ĐĂNG KÝ HỌC VIÊN</span><br>
+    <label id="lb">Họ và tên</label>
+    <input id="txt" type="text" name="txtTen2" size="20"><br>
+    <label id="lb">Ngày sinh</label>
+    <input id="txt" type="text" name="txtNgaySinh" size="10"><br>
+    <label id="lb">Giới tính</label>
+    <input id="txt" type="radio" name="rd1" value="nam">Nam
+    <input type="radio" name="rd2" value="nu">Nữ<br>
+    <label id="lb">Địa chỉ</label>
+    <textarea id="txt"  name="txtA" rows="10" cols="30"></textarea><br>
+    <label id="lb">Lớp</label>
+    <select  id="txt">
+        <option value="">-Chọn lớp-</option>
+        <option>Lớp JaVa 1</option>
+        <option>Lớp Java 2</option>
+    </select><br>
+    <label id="lb">Email</label>
+    <input id="txt" type="text" name="txtEmail2"><br>
+    <label id="lb">Điện thoại</label>
+    <input id="txt" type="text" name="txtPhone"><br>
+    <input id="btn" type="submit" value="Đăng ký" name="btnSubmit2" size="5">
+    <input id="btn" type="Reset" value="Nhập lại" name="btnReset2" size="5">
+</form>
+<style>
+    .f2 {    background: #ffeb3b8c;
+        padding: 35px;
+        width: 400px;
+    }}
+</style>
+</body>
+</html>
